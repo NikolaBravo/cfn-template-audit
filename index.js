@@ -101,6 +101,12 @@ const getTemplates = (region, conditions) => {
           Region: region
         }))
         .filter(data => data.TemplateBody)
+        .sort((a, b) => {
+          return `${a.Summary.StackName}-${a.Region}` >
+            `${b.Summary.StackName}-${b.Region}`
+            ? 1
+            : -1;
+        })
     );
   });
 };
