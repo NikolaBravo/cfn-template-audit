@@ -1,0 +1,35 @@
+{
+  "name": "@mapbox/cfn-template-audit",
+  "version": "0.0.1",
+  "description": "Read all the CloudFormation templates in an AWS account",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --single-quote --write *.js",
+    "test": "nyc tape test/*.test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapbox/cfn-template-audit.git"
+  },
+  "author": "Mapbox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapbox/cfn-template-audit/issues"
+  },
+  "homepage": "https://github.com/mapbox/cfn-template-audit#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-prettier": "^1.7.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-prettier": "^2.0.1",
+    "nyc": "^10.2.0",
+    "opener": "^1.4.3",
+    "prettier": "^1.2.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.45.0",
+    "p-queue": "^1.0.0"
+  }
+}

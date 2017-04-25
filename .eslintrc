@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "plugins": [
+    "node",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "node/no-unsupported-features": ["error", {"version": 4}],
+    "node/no-missing-require": "error",
+    "node/no-deprecated-api": "error"
+  }
+}
