@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/cfn-template-audit",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Read all the CloudFormation templates in an AWS account",
   "main": "index.js",
   "scripts": {
